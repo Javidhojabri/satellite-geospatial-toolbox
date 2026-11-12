@@ -30,7 +30,7 @@ def mask_landsat_sr(image):
     qa = image.select('QA_PIXEL')
     cloud_shadow_mask = (1 << 4)
     clouds_mask = (1 << 3)
-    mask = qa.bitwiseAnd(cloud_shadow_mask).eq(0).and_(
+    mask = qa.bitwiseAnd(cloud_shadow_mask).eq(0).And(
            qa.bitwiseAnd(clouds_mask).eq(0))
     return image.updateMask(mask)
 
