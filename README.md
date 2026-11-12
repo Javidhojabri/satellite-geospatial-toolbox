@@ -1,24 +1,25 @@
 # Satellite Geospatial Toolbox
 
-A Python toolbox for basic geospatial raster processing and remote-sensing analysis.
+A modular and lightweight Python toolkit for processing satellite imagery, vegetation/water indices, and multi-temporal environmental monitoring (designed for Remote Sensing & GIS workflows).
 
 ## Features
-
-- NDVI calculation from raster bands
-- NDWI calculation from raster bands
-- Simplified land surface temperature (LST) estimation example
+- **Vegetation & Water Indices:** Calculate NDVI and NDWI using Rasterio and NumPy.
+- **Thermal Processing:** Simplified Land Surface Temperature (LST) estimation framework.
+- **Time-Series Analysis:** Multi-temporal raster stacking and pixel-wise temporal mean calculation for environmental trend monitoring (e.g., Lake Urmia desiccation studies).
+- **Vector Operations:** Spatial data handling and filtering using GeoPandas.
 
 ## Requirements
-
-- Python 3
+- Python 3.x
 - Rasterio
 - NumPy
+- Pandas
 - GeoPandas
 
-## Notes
+## Modules Overview
+- `geospatial_processor.py`: Core processing functions for indices and LST.
+- `timeseries_analyzer.py`: Multi-temporal raster stack loading and trend analysis.
 
-The LST calculation is a simplified example. Its assumptions and coefficients may need to be adapted to the satellite sensor and data being used.
-
-## Usage
-
-See `geospatial_processor.py` for the implementation and example usage.
+## Author
+**Javid Hojabri**  
+*M.Sc. in Remote Sensing & GIS, University of Tehran*  
+[Google Scholar & Research Profiles](https://github.com/Javidhojabri)
