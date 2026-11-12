@@ -23,3 +23,12 @@ A modular and lightweight Python toolkit for processing satellite imagery, veget
 **Javid Hojabri**  
 *M.Sc. in Remote Sensing & GIS, University of Tehran*  
 [Google Scholar & Research Profiles](https://github.com/Javidhojabri)
+## Running on Linux
+
+The analysis pipeline can be executed end-to-end from the terminal on any Linux distribution (tested on Ubuntu), or on Windows through WSL.
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Javidhojabri/satellite-geospatial-toolbox.git
+cd satellite-geospatial-toolbox
+
